@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="frontend/css/main.css">
+    <link rel="stylesheet" href="frontend/css/header.css">
+    <script src="frontend/js/main.js" defer></script>
+    <title>Home</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            
+            <!-- dropdown menu icon -->
+            <div class="my-dropdown-menu">
+                <div class="menu-container" onclick="toggleMenu(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            
+            <!-- dropdown menu content -->
+            <div class="dropdown" id="dropdown-content">
+                <div class="dropdown-link link-1">
+                    <a href="">Hand Tools<img src="assets/icons/icons8-right-arrow-24.png" alt=""></a>
+                    <div class="submenu">
+                        <a href="">Hammer</a>
+                        <a href="">Scredrivers</a>
+                        <a href="">Wrenches</a>
+                        <a href="">Pliers</a>
+                    </div>
+                </div> 
+                <div class="dropdown-link link-1">
+                    <a href="">Power Tools<img src="assets/icons/icons8-right-arrow-24.png" alt=""></a>
+                    <div class="submenu">
+                        <a href="">Drill</a>
+                        <a href="">Circular Saw</a>
+                        <a href="">Angle Grinder</a>
+                        <a href="">Sander</a>
+                    </div>
+                </div> 
+                <div class="dropdown-link link-1">
+                    <a href="">Fasteners<img src="assets/icons/icons8-right-arrow-24.png" alt=""></a>
+                    <div class="submenu">
+                        <a href="">Nails</a>
+                        <a href="">Screws</a>
+                        <a href="">Bolts</a>
+                        <a href="">Washers</a>
+                    </div>
+                </div> 
+                <div class="dropdown-link link-1">
+                    <a href="">Building Materials<img src="assets/icons/icons8-right-arrow-24.png" alt=""></a>
+                    <div class="submenu">
+                        <a href="">Plywood</a>
+                        <a href="">Cement</a>
+                        <a href="">Fiberglass</a>
+                        <a href="">Tile</a>
+                    </div>
+                </div> 
+            </div>
+            
+            <!-- logo -->
+            <img src="assets/images/logo.jpeg" alt="logo" width="100" height="100">
+            
+            <div class="searchbar">
+                <form action="" method="get">
+                    <input type="text" name="keyword" id="search" placeholder="Search...">
+                    <button type="submit"><img src="assets/icons/icons8-search-50.png" alt=""></button>
+                </form>
+            </div>
+            
+            <!-- <img src="assets/icons/icons8-drill-50.png" alt="" class="icon"> -->
+            <div>
+                <img src="assets/icons/icons8-price-tag-64.png" alt="" class="icon">
+                <span>Savings</span>
+            </div>
+            <div>
+                <img src="assets/icons/icons8-user-64.png" alt="" class="icon">
+                <span>Login</span>
+            </div>
+            <div>
+                <img src="assets/icons/icons8-cart-64.png" alt="" class="icon">
+                <span>Cart</span>
+            </div>
+        </div>
+    </header>
+    
+    <div id="shade"></div>
+
+    <div class="banner-grid">
+        <div class="banner-1"><img src="assets/images/Ace-Hardware-Coupon-Codes-Offers-Sales.webp" alt=""></div>
+        <div class="banner-2"><img src="assets/images/Ace-Hardware-Black-Friday-2020-Sale-Poster.jpg" alt=""></div>
+        <div class="banner-3"><img src="assets/images/dewalt-holiday-deals.jpg" alt=""></div>
+    </div>
+    <br>
+
+    <hr>
+
+    <h1>Our Brands</h1>
+    <div class="brand-container">
+        <div class="item item-1"><img src="assets/images/tool-logo-1.jpg" alt=""></div>
+        <div class="item item-2"><img src="assets/images/tool-logo-2.jpg" alt=""></div>
+        <div class="item item-3"><img src="assets/images/tool-logo-3.jpg" alt=""></div>
+        <div class="item item-4"><img src="assets/images/tool-logo-4.jpg" alt=""></div>
+        <div class="item item-5"><img src="assets/images/tool-logo-5.jpg" alt=""></div>
+        <div class="item item-6"><img src="assets/images/tool-logo-6.jpg" alt=""></div>
+        <div class="item item-7"><img src="assets/images/tool-logo-7.jpg" alt=""></div>
+        <div class="item item-8"><img src="assets/images/tool-logo-8.jpg" alt=""></div>
+        <div class="item item-9"><img src="assets/images/tool-logo-9.jpg" alt=""></div>
+        <div class="item item-10"><img src="assets/images/tool-logo-10.jpg" alt=""></div>
+        <div class="item item-11"><img src="assets/images/tool-logo-11.jpg" alt=""></div>
+        <div class="item item-12"><img src="assets/images/tool-logo-12.jpg" alt=""></div>
+    </div>
+    
+    <hr>
+
+    <h1>Enjoy Our <span style="color:red;">Holiday Sales!</span></h1>
+    <div class="sale-container">
+    <div class="sale-section" id="sale-section">
+        <div class="product-card">
+            <img src="assets/images/pwr-tool-1.jpg" alt="" class="product-img" width="300px" height="400px">
+            <div class="product-info">
+                <p class="product-name">Power Tool</p>
+                <p class="product-rating">⭐⭐⭐</p>
+                <p class="product-price">Rs.10000.00<sup class="product-prev-price">15000.00</sup></p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="assets/images/pwr-tool-1.jpg" alt="" class="product-img" width="300px" height="400px">
+            <div class="product-info">
+                <p class="product-name">Power Tool</p>
+                <p class="product-rating">⭐⭐⭐</p>
+                <p class="product-price">Rs.10000.00<sup class="product-prev-price">15000.00</sup></p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="assets/images/pwr-tool-1.jpg" alt="" class="product-img" width="300px" height="400px">
+            <div class="product-info">
+                <p class="product-name">Power Tool</p>
+                <p class="product-rating">⭐⭐⭐</p>
+                <p class="product-price">Rs.10000.00<sup class="product-prev-price">15000.00</sup></p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="assets/images/pwr-tool-1.jpg" alt="" class="product-img" width="300px" height="400px">
+            <div class="product-info">
+                <p class="product-name">Power Tool</p>
+                <p class="product-rating">⭐⭐⭐</p>
+                <p class="product-price">Rs.10000.00<sup class="product-prev-price">15000.00</sup></p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="assets/images/pwr-tool-2.jpg" alt="" class="product-img" width="300px" height="400px">
+            <div class="product-info">
+                <p class="product-name">Power Tool</p>
+                <p class="product-rating">⭐⭐⭐</p>
+                <p class="product-price">Rs.10000.00<sup class="product-prev-price">15000.00</sup></p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="assets/images/pwr-tool-2.jpg" alt="" class="product-img" width="300px" height="400px">
+            <div class="product-info">
+                <p class="product-name">Power Tool</p>
+                <p class="product-rating">⭐⭐⭐</p>
+                <p class="product-price">Rs.10000.00<sup class="product-prev-price">15000.00</sup></p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="assets/images/pwr-tool-2.jpg" alt="" class="product-img" width="300px" height="400px">
+            <div class="product-info">
+                <p class="product-name">Power Tool</p>
+                <p class="product-rating">⭐⭐⭐</p>
+                <p class="product-price">Rs.10000.00<sup class="product-prev-price">15000.00</sup></p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="assets/images/pwr-tool-2.jpg" alt="" class="product-img" width="300px" height="400px">
+            <div class="product-info">
+                <p class="product-name">Power Tool</p>
+                <p class="product-rating">⭐⭐⭐</p>
+                <p class="product-price">Rs.10000.00<sup class="product-prev-price">15000.00</sup></p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="assets/images/pwr-tool-3.jpg" alt="" class="product-img" width="300px" height="400px">
+            <div class="product-info">
+                <p class="product-name">Power Tool</p>
+                <p class="product-rating">⭐⭐⭐</p>
+                <p class="product-price">Rs.10000.00<sup class="product-prev-price">15000.00</sup></p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="assets/images/pwr-tool-3.jpg" alt="" class="product-img" width="300px" height="400px">
+            <div class="product-info">
+                <p class="product-name">Power Tool</p>
+                <p class="product-rating">⭐⭐⭐</p>
+                <p class="product-price">Rs.10000.00<sup class="product-prev-price">15000.00</sup></p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="assets/images/pwr-tool-3.jpg" alt="" class="product-img" width="300px" height="400px">
+            <div class="product-info">
+                <p class="product-name">Power Tool</p>
+                <p class="product-rating">⭐⭐⭐</p>
+                <p class="product-price">Rs.10000.00<sup class="product-prev-price">15000.00</sup></p>
+            </div>
+        </div>
+        <div class="product-card">
+            <img src="assets/images/pwr-tool-3.jpg" alt="" class="product-img" width="300px" height="400px">
+            <div class="product-info">
+                <p class="product-name">Power Tool</p>
+                <p class="product-rating">⭐⭐⭐</p>
+                <p class="product-price">Rs.10000.00<sup class="product-prev-price">15000.00</sup></p>
+            </div>
+        </div>
+    </div>
+    <button onclick="scrollL()" class="scroll-l"><img src="assets/icons/icons8-left-arrow-50.png" alt=""></button>
+    <button onclick="scrollR()" class="scroll-r"><img src="assets/icons/icons8-right-arrow-50.png" alt=""></button>
+    </div>
+
+    <hr>
+
+    <h1>Popular Categories</h1>
+    <div class="cat-grid-container">
+        <div><a href=""><img src="assets/icons/icons8-hand-drill-25.png" alt=""> Hand Tools</a></div>
+        <div><a href=""><img src="assets/icons/icons8-drill-25.png" alt=""> Power Tools</a></div>
+        <div><a href=""><img src="assets/icons/icons8-screw-25.png" alt=""> Nuts and Bolts</a></div>
+        <div><a href=""><img src="assets/icons/icons8-electrical-25.png" alt=""> Electrical Supplies</a></div>
+        <div><a href=""><img src="assets/icons/icons8-plumbing-25.png"> Plumbing</a></div>
+        <div><a href=""><img src="assets/icons/icons8-paint-bucket-25.png" alt=""> Paint Supplies</a></div>
+        <div><a href=""><img src="assets/icons/icons8-wood-25.png" alt=""> Building Materials</a></div>
+        <div><a href=""><img src="assets/icons/icons8-wrench-25.png" alt=""> Hardware</a></div>
+        <div><a href=""><img src="assets/icons/icons8-hose-25.png" alt=""> Gardening Supplies</a></a></div>
+        <div><a href=""><img src="assets/icons/icons8-safety-goggles-25.png" alt=""> Safety Equipment</a></div>
+    </div>
+
+    <hr>
+
+    <h1>Convenient Shopping Experience</h1>
+
+    <div class="adv-container">
+        <div>
+            <img src="assets/images/free_shipping_10.jpg" alt="">
+            <p>Save money with free shipping on orders more than Rs.10000.00</p>
+        </div>
+        <div>
+            <img src="assets/images/vecteezy_express-vector-icon-design_20570282.jpg" alt="">
+            <p>Get same day delivery for eligible in-stock items</p>
+        </div>
+        <div>
+            <img src="assets/images/free_shipping_10.jpg" alt="">
+            <p>Save money with free shipping on orders more than Rs.10000.00</p>
+        </div>
+        <div>
+            <img src="assets/images/vecteezy_express-vector-icon-design_20570282.jpg" alt="">
+            <p>Get same day delivery for eligible in-stock items</p>
+        </div>
+    </div>
+
+    <a href="https://www.vecteezy.com/free-vector/background">Background Vectors by Vecteezy</a>
+
+    <div class="container">
+        <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+          <div class="col mb-3">
+            <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+              <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            </a>
+            <p class="text-body-secondary">© 2024</p>
+          </div>
+      
+          <div class="col mb-3">
+      
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Customer Service</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Check Order Status</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Return Policy</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Refund Policy</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>Resources</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Specials & Offers</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Gift Cards</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Truck & Tool Rental</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Protection Plans</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Installation & Services</a></li>
+            </ul>
+          </div>
+      
+          <div class="col mb-3">
+            <h5>About Us</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Investor Relations</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Suppliers & Providers</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Affliate Program</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Cooperate information</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Licensing Information</a></li>
+            </ul>
+          </div>
+        </footer>
+      </div>
+</body>
+</html>
